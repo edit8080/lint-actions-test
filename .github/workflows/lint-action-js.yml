@@ -1,9 +1,9 @@
 name: Lint Action - JS
 
 on: [push, pull_request]
-# defaults:
-#   run:
-#     working-directory: frontend
+defaults:
+  run:
+    working-directory: frontend
 
 jobs:
   build:
@@ -24,7 +24,7 @@ jobs:
 
     - name: Install Node.js dependencies
       run: yarn install --frozen-lockfile
-      # uses: npm ci / npm install
+      # run: npm ci / npm install
 
     # - name: Check build if present
     #   uses: npm run build --if-present
