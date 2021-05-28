@@ -27,7 +27,7 @@ jobs:
       # run: npm ci / npm install
 
     - name: Check build if present
-      uses: npm run build --if-present
+      run: npm run build --if-present
 
     - name: Run JavaScript linters
       uses: wearerequired/lint-action@v1
