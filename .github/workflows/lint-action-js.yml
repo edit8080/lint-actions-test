@@ -49,3 +49,8 @@ jobs:
     - run: npm install
     - run: npm run build --if-present
     - run: npm test
+    - name: Run JavaScript linters
+      uses: wearerequired/lint-action@v1
+      with:
+          eslint: true
+          prettier: true
